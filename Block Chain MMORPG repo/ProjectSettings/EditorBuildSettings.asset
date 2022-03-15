@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer Tests/Multiplayer Test (Menu).unity
+    guid: ea19dfe0fc0d11544b66558d40b42838
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer Tests/MultiplayerRoom1.unity
+    guid: 45fdb253793daa64b8650c67b8b4fe4c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

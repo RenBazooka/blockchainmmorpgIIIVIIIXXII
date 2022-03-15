@@ -11,6 +11,9 @@ TagManager:
   - Horse
   - Water
   - Animal
+  - Item
+  - Door
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -22,9 +25,9 @@ TagManager:
   - 
   - GROUND
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Player RIg
+  - Player Character
   - 
   - 
   - 

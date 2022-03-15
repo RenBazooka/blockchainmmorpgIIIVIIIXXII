@@ -22,10 +22,10 @@ namespace StarterAssets
         //Attack variables
         [Space]
         public float coolDowntime = 2f;
-        private float nextFireTime = 0f;
+        //private float nextFireTime = 0f;
         public static int noOfClicks = 0;
-        private float lastClickedTime = 0f;
-        private float maxComboDelay = 1f;
+        //private float lastClickedTime = 0f;
+        //private float maxComboDelay = 1f;
 
         // Start is called before the first frame update
         void Start()
@@ -77,7 +77,7 @@ namespace StarterAssets
             }
 
 
-            Debug.Log(noOfClicks);
+            
 
             if (_controller.isMoving != Vector2.zero)
             {
