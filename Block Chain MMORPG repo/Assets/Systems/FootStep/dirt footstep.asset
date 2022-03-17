@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635bfebfe7180794a95f118a4d319b87, type: 3}
+  m_Name: dirt footstep
+  m_EditorClassIdentifier: 
+  defaultEffect:
+    walkAudioClips:
+    - {fileID: 8300000, guid: 3bf9975566f9cd847977ed3ebb6fd3e3, type: 3}
+    - {fileID: 8300000, guid: 1c9813dc085b5374884cf7bcbaa27dca, type: 3}
+    walkPrefabs: []
+    runAudioClips:
+    - {fileID: 8300000, guid: fcb08ad9aae12794684aee4e24491861, type: 3}
+    - {fileID: 8300000, guid: fcb08ad9aae12794684aee4e24491861, type: 3}
+    - {fileID: 8300000, guid: 27c1afdeb55574a48831d6f430f1cbac, type: 3}
+    runPrefabs: []
+    sprintAudioClips:
+    - {fileID: 8300000, guid: 302595b93370c52408825d7fb07d09be, type: 3}
+    - {fileID: 8300000, guid: 0b8aed54efbbfa946af2f31d3d92f9cd, type: 3}
+    sprintPrefabs: []
+    jumpAudioClips:
+    - {fileID: 8300000, guid: 80d4ea7778bc3d9459d9fcea672afcee, type: 3}
+    - {fileID: 8300000, guid: f7d6941d3b847874686c2b6a80ab8a1b, type: 3}
+    jumpPrefabs: []
+    landAudioClips:
+    - {fileID: 8300000, guid: baf90d315c62c1648ba2901ff92db065, type: 3}
+    - {fileID: 8300000, guid: 70bfbaaebebfb0d4ba87a5e9947d5ad3, type: 3}
+    landPrefabs: []
+    customEffects: []
+  tagEffects: []

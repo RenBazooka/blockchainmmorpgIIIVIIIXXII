@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635bfebfe7180794a95f118a4d319b87, type: 3}
+  m_Name: grass footstep
+  m_EditorClassIdentifier: 
+  defaultEffect:
+    walkAudioClips:
+    - {fileID: 8300000, guid: 9cd93e6b4948e0c4abc089546af87c38, type: 3}
+    - {fileID: 8300000, guid: 6d1a50aa1ed16a645bfc3a480d77712c, type: 3}
+    - {fileID: 8300000, guid: 837b2ac0dee4b2e49b7c4229129a2cd2, type: 3}
+    - {fileID: 8300000, guid: eb9d0826f01bad94293a3ca6fa1f8427, type: 3}
+    - {fileID: 8300000, guid: ba6466c0db2d12649a51ba73749902d3, type: 3}
+    walkPrefabs: []
+    runAudioClips:
+    - {fileID: 8300000, guid: 9cd93e6b4948e0c4abc089546af87c38, type: 3}
+    - {fileID: 8300000, guid: 6d1a50aa1ed16a645bfc3a480d77712c, type: 3}
+    - {fileID: 8300000, guid: 837b2ac0dee4b2e49b7c4229129a2cd2, type: 3}
+    - {fileID: 8300000, guid: eb9d0826f01bad94293a3ca6fa1f8427, type: 3}
+    - {fileID: 8300000, guid: ba6466c0db2d12649a51ba73749902d3, type: 3}
+    runPrefabs: []
+    sprintAudioClips:
+    - {fileID: 8300000, guid: 3ec9ef3892d02044a9d62e412eb45ffb, type: 3}
+    - {fileID: 8300000, guid: 6c8508d96905ea749ae50b49916fde55, type: 3}
+    - {fileID: 8300000, guid: bd5653e52c4636e4aa3b0ced8f49a18d, type: 3}
+    - {fileID: 8300000, guid: 161d5a427e88d594f9906708ccdc5663, type: 3}
+    sprintPrefabs: []
+    jumpAudioClips:
+    - {fileID: 8300000, guid: 984d316ed8be3ac4da9e31768a8b1fa9, type: 3}
+    - {fileID: 8300000, guid: d3d29f80378ba8e4e9c00f92fc5b5d4e, type: 3}
+    - {fileID: 8300000, guid: fe175f117cf3fb2428d279bc830a1830, type: 3}
+    - {fileID: 8300000, guid: f193a8bae58928946916aab1c2068cf1, type: 3}
+    - {fileID: 8300000, guid: b04465ceef591864badb1aa5c65ee644, type: 3}
+    jumpPrefabs: []
+    landAudioClips:
+    - {fileID: 8300000, guid: a967f92e38352bb4291945423de63499, type: 3}
+    - {fileID: 8300000, guid: f2bc9c36f73ea50419060ec6eb40c246, type: 3}
+    - {fileID: 8300000, guid: 54cd8769272b7ca4c9a1386d106f621d, type: 3}
+    landPrefabs: []
+    customEffects: []
+  tagEffects: []
