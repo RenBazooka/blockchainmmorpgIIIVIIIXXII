@@ -189,12 +189,12 @@ Material:
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _ReflectionDistortion: 0.256
+    - _ReflectionDistortion: 0.17
     - _ReflectionFresnel: 2.88
     - _ReflectionFresnelNormal: 0.264
-    - _ReflectionIntensity: 1
+    - _ReflectionIntensity: 0.05
     - _ReflectionMode: 3
-    - _ReflectionRoughness: 0.1
+    - _ReflectionRoughness: 0.07
     - _Scattering: 0
     - _ScatteringIntensity: 1
     - _ScatteringRangeMax: 2

@@ -23,25 +23,14 @@ MonoBehaviour:
     material: {fileID: 11400000, guid: 56c8c46f4a9f0944d9e59642fae82c22, type: 2}
   - texture:
     - {fileID: 2800000, guid: 16fdc16af892fc745890a4d5720a58dd, type: 3}
-    sprite: []
-    material: {fileID: 11400000, guid: e41e3b918427eb7489fbe36cc7d44369, type: 2}
-  - texture:
     - {fileID: 2800000, guid: 564301c44b28a8a4288812f7d3327726, type: 3}
-    sprite: []
-    material: {fileID: 11400000, guid: e41e3b918427eb7489fbe36cc7d44369, type: 2}
-  - texture:
     - {fileID: 2800000, guid: 0dd443a2df90ef247be261e60d0ce83b, type: 3}
-    sprite: []
-    material: {fileID: 11400000, guid: e41e3b918427eb7489fbe36cc7d44369, type: 2}
-  - texture:
-    - {fileID: 2800000, guid: 2b47f2696e9ccfa4cac3f18a1e969cfe, type: 3}
-    sprite: []
-    material: {fileID: 0}
-  - texture:
     - {fileID: 2800000, guid: 599913b2e4ce6094abec3e56f55d4399, type: 3}
     sprite: []
     material: {fileID: 11400000, guid: e41e3b918427eb7489fbe36cc7d44369, type: 2}
   - texture:
-    - {fileID: 2800000, guid: d3d12a5c44f10ef49bce5c0cddb59bf8, type: 3}
+    - {fileID: 2800000, guid: 6bed64f1ea9763345b90ced1d6f5345e, type: 3}
+    - {fileID: 2800000, guid: 1b314c2bebf2ab84ba31d3489029d46e, type: 3}
+    - {fileID: 2800000, guid: 5aaab05814f258b4f91014cd8ac2bc7b, type: 3}
     sprite: []
-    material: {fileID: 11400000, guid: 56c8c46f4a9f0944d9e59642fae82c22, type: 2}
+    material: {fileID: 11400000, guid: 4f955e9952190ea44b8673b7788a90d6, type: 2}
