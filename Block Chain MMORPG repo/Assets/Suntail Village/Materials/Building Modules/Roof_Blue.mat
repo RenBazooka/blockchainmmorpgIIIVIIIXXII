@@ -139,7 +139,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _Color: {r: 0.509434, g: 0.1231538, b: 0, a: 1}
+    - _Color: {r: 0.6509434, g: 0.34879115, b: 0.24256852, a: 1}
     - _CoverageColor: {r: 0.36795306, g: 0.434, b: 0.35327598, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
