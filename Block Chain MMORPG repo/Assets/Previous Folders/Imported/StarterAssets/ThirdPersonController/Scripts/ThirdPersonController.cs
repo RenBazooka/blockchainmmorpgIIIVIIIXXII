@@ -129,6 +129,7 @@ public class ThirdPersonController : MonoBehaviour
 	private int _animIDFreeFall;
 	private int _animIDMotionSpeed;
 	private int _animIDCrouch;
+	private int _animIDSwim;
 
 	private Animator _animator;
 	private CharacterController _controller;
@@ -179,10 +180,7 @@ public class ThirdPersonController : MonoBehaviour
 		JumpAndGravity();
 		Crouch();
 
-        if (OnSteepSlope())
-        {
-			SteepSlopeMovement();
-        }
+        
 
 
 		//Debug.Log(_controller.velocity.magnitude);
@@ -203,6 +201,7 @@ public class ThirdPersonController : MonoBehaviour
 		_animIDFreeFall = Animator.StringToHash("FreeFall");
 		_animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 		_animIDCrouch = Animator.StringToHash("Crouch");
+		_animIDSwim = Animator.StringToHash("Swim");
 	}
 
 	private void GroundedCheck()
@@ -301,6 +300,8 @@ public class ThirdPersonController : MonoBehaviour
 
 			}
 			*/
+
+
         }
         
 
@@ -482,28 +483,22 @@ public class ThirdPersonController : MonoBehaviour
 		return Mathf.Clamp(lfAngle, lfMin, lfMax);
 	}
 
-	private bool OnSteepSlope()
+	
+
+	
+
+
+	public void PlayerSwim()
     {
-		if (!_controller.isGrounded) return false;
-		if (Physics.Raycast(transform.position, Vector3.down, out _slopeHit, (_controller.height / 2) + _groundRayDistance))
-		{
-			float _slopeAngle = Vector3.Angle(_slopeHit.normal, Vector3.up);
-			if (_slopeAngle > _controller.slopeLimit) return true;
+		_verticalVelocity = 0;
+		_animator.SetBool(_animIDSwim, true);
 
 		
-		}
-		return false;
     }
-
-	private void SteepSlopeMovement()
+	public void EndSwim()
     {
-		Vector3 slopeDirection = Vector3.up - _slopeHit.normal * Vector3.Dot(Vector3.up, _slopeHit.normal);
-		float slideSpeed = targetSpeed + slopeSlideSpeed + Time.deltaTime;
-
-		targetDirection = slopeDirection * -slideSpeed;
-		targetDirection.y = targetDirection.y - _slopeHit.point.y;
-
-    }
+		_animator.SetBool(_animIDSwim, false);
+	}
 
 	private void OnDrawGizmosSelected()
 	{
