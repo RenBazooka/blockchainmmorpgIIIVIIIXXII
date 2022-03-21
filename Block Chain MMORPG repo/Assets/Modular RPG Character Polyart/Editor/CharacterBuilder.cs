@@ -310,7 +310,7 @@ public class CharacterBuilder : EditorWindow
             }
         }
     }
-    void RandomCharacter(int r)
+    public void RandomCharacter(int r)
     {
         if (r == 0 && !male)
         {
@@ -706,7 +706,7 @@ public class CharacterBuilder : EditorWindow
         armorType = GUILayout.SelectionGrid(armorType, armorT, 1, GUILayout.Width(60), GUILayout.Height(450));
         GUILayout.EndHorizontal();
     }
-    void RandomColors(int r)
+    public void RandomColors(int r)
     {
         if (r == 0 || r == 2)
         {

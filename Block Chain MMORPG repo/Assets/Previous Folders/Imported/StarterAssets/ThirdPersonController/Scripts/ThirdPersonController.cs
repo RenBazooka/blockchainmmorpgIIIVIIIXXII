@@ -107,7 +107,8 @@ public class ThirdPersonController : MonoBehaviour
 	private float _animationBlend;
 	private float _targetRotation = 0.0f;
 	private float _rotationVelocity;
-	private float _verticalVelocity;
+	[HideInInspector]
+	public float _verticalVelocity;
 	private float _terminalVelocity = 53.0f;
 	private float targetSpeed;
 	// timeout deltatime
@@ -488,17 +489,7 @@ public class ThirdPersonController : MonoBehaviour
 	
 
 
-	public void PlayerSwim()
-    {
-		_verticalVelocity = 0;
-		_animator.SetBool(_animIDSwim, true);
-
-		
-    }
-	public void EndSwim()
-    {
-		_animator.SetBool(_animIDSwim, false);
-	}
+	
 
 	private void OnDrawGizmosSelected()
 	{

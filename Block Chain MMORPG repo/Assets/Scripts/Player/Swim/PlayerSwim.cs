@@ -7,7 +7,8 @@ public class PlayerSwim : MonoBehaviour
     
     public bool isSwimming;
 
-    private ThirdPersonController controller;
+    public Animator _animator;
+    private ThirdPersonController _controller;
     private float controllerGravity;
     private float waterGravity;
     private float universalGravity;
@@ -15,24 +16,25 @@ public class PlayerSwim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponentInParent<ThirdPersonController>();
-        controllerGravity = controller.Gravity;
+
+        _controller = GetComponentInParent<ThirdPersonController>();
+        _animator = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-         
-       
-        if(isSwimming == true)
+
+        if (isSwimming)
         {
-            controller.PlayerSwim();
+            playerSwim();
         }
 
-       if(isSwimming == false)
-       {
-            controller.EndSwim();
-       }
+        if (!isSwimming)
+        {
+            EndSwim();
+        }    
+             
 
     }
 
@@ -56,8 +58,18 @@ public class PlayerSwim : MonoBehaviour
     }
 
 
-    
-    
+    public void playerSwim()
+    {
+        _controller._verticalVelocity = 0;
+        _animator.SetBool("Swim", true);
 
-    
+
+    }
+    public void EndSwim()
+    {
+        _animator.SetBool("Swim", false);
+    }
+
+
+
 }

@@ -71,14 +71,14 @@ public class MainMenuScript : MonoBehaviour
 
     Image menuBackground;
 
-    public void OnApplicationQuit()
+    void OnApplicationQuit()
     {
         walletConnect.CLearSession();
     }
     async void Start()
     {
         menuBackground = (Image)gameObject.GetComponent(typeof(Image));
-        
+
         qrMenu.SetActive(false);
         androidMenu.SetActive(false);
         iosMenu.SetActive(false);
@@ -114,11 +114,11 @@ public class MainMenuScript : MonoBehaviour
     public async void Play()
     {
         AuthenticationButtonOff();
-        qrMenu.SetActive(true);
-        /*
+
         // If the user is still logged in just show game.
         if (MoralisInterface.IsLoggedIn())
         {
+            
             Debug.Log("User is already logged in to Moralis.");
         }
         // User is not logged in, depending on build target, begin wallect connection.
@@ -151,7 +151,6 @@ public class MainMenuScript : MonoBehaviour
             qrMenu.SetActive(true);
 #endif
         }
-        */
     }
 
 #if UNITY_WEBGL

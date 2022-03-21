@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class ShopifyIntegrate : MonoBehaviour
 {
-
-    public GameObject ShopifyPrefab;
-    private ShopPopup shop;
-    
+    private LevelManager manager;
+    //public GameObject ShopifyPrefab;
+    private ShopPopup shopPopUP;
+    public GameObject Shopify;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        shop = ShopifyPrefab.gameObject.GetComponent<ShopPopup>();
+        Shopify = GameObject.Find("Shopify interactions");
+        
+
+        shopPopUP = Shopify.transform.gameObject.GetComponentInChildren<ShopPopup>();
          
     }
 
@@ -32,7 +35,7 @@ public class ShopifyIntegrate : MonoBehaviour
 
             if (Input.GetKey(KeyCode.E))
             {
-                shop.ShowPopup();
+                shopPopUP.ShowPopup();
             }
 
             

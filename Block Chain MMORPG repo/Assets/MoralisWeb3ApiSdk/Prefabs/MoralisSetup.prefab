@@ -43,13 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411f905c051c23f4fb5890879a506219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoralisServerURI: https://jzlwnj0plrij.usemoralis.com:2053/server
-  MoralisApplicationId: T8U9p5VGzf81Vpq1CdZqqYU3uvIh3glWaI4OE6o0
+  MoralisServerURI: https://0lq4bt1knsmn.usemoralis.com:2053/server
+  MoralisApplicationId: gheQhjq6hxxWdAlNe5dgR6aZt5JgLaScq7TqLGC2
   ApplicationName: Utopia
-  Version: 1.0.0
-  ApplicationDescription: This application provdies an example of how to you Moralis
-    in a Unity 3D Game
+  Version: 0.0.1
+  ApplicationDescription: A mmorpg Game for blockchain
   ApplicationIcons:
   - https://moralis.io/wp-content/uploads/2021/06/Powered-by-Moralis-Badge-Black.svg
-  ApplicationUrl: https://www.moralis.io
+  ApplicationUrl: https://moralis.io/
   walletConnect: {fileID: 0}
